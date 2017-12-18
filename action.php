@@ -55,7 +55,7 @@ class action_plugin_color extends DokuWiki_Action_Plugin {
         global $ID;
 
         $style = '';
-        $metadata = p_get_metadata( $ID, 'plugin_color')?:array();
+        $metadata = p_get_metadata( $ID, 'plugin_colorstyle')?:array();
         foreach( $metadata as $colorType => $colors ) {
             foreach( array_unique($colors) as $color ) {
                 $style .= '.color_' . dechex(crc32($color)) . '{' . $colorType . ':' . $color . ";}\n";

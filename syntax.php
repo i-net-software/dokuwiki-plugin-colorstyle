@@ -93,8 +93,8 @@ class syntax_plugin_color extends DokuWiki_Syntax_Plugin {
             switch ($state) {
               case DOKU_LEXER_ENTER :      
                 list($color, $background) = $match;
-                if ( !empty($color) ) $renderer->meta['plugin_color']['color'][] = $color;
-                if ( !empty($background) ) $renderer->meta['plugin_color']['background-color'][] = $background;
+                if ( !empty($color) ) $renderer->meta['plugin_colorstyle']['color'][] = $color;
+                if ( !empty($background) ) $renderer->meta['plugin_colorstyle']['background-color'][] = $background;
             }
             return true;
         }
