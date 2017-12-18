@@ -1,0 +1,7 @@
+base   colorstyle
+author i-net software / Gerry Weißbach
+email  tools@inetsoftware.de
+date   2017-12-18
+name   color syntax plugin
+desc   Write colored text in DokuWiki. Based up on the color plugin by Christopher Smith
+url    https://www.dokuwiki.org/plugin:colorstyle
